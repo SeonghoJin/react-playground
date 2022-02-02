@@ -1,0 +1,51 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "진성호1"
+        },
+        {
+            "id": 2,
+            "name": "진성호2"
+        },
+        {
+            "id": 3,
+            "name": "진성호3"
+        },
+        {
+            "id": 4,
+            "name": "진성호4"
+        },
+        {
+            "id": 5,
+            "name": "진성호5"
+        }
+    ],
+    "friends": [
+        {
+            "id": 1,
+            "name": "진성호1의친구1",
+            "frienduserId": "1"
+        },
+        {
+            "id": 2,
+            "frienduserId": "1",
+            "name": "진성호1의친구2"
+        },
+        {
+            "frienduserId": "1",
+            "id": 3,
+            "name": "진성호1의친구3"
+        },
+        {
+            "frienduserId": "1",
+            "id": 4,
+            "name": "진성호1의친구4"
+        },
+        {
+            "frienduserId": "1",
+            "id": 5,
+            "name": "진성호1의친구5"
+        }
+    ]
+}
