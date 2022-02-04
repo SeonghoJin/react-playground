@@ -6,8 +6,8 @@ import {QueryClient, QueryClientProvider} from "react-query";
 import {ReactQueryDevtools} from "react-query/devtools";
 import {ReactQueryPaginatedQueriesExample} from "./ReactQueryPaginatedQueriesExample";
 import {ReactQueryInfiniteQueriesExample} from "./ReactQueryInfiniteQueriesExample";
-import { Loading } from '../components/atoms/Loading';
 import {ReactQuerySuspenseExample} from "./ReactQuerySuspenseExample";
+import {ReactQueryErrorBoundaryExample} from "./ReactQueryErrorBoundaryExample";
 
 const queryClient = new QueryClient({
     defaultOptions: {
@@ -29,6 +29,7 @@ export const ReactQueryRouter = (props: Props) => {
                     <Route path={"/2"} element={<ReactQueryPaginatedQueriesExample/>}></Route>
                     <Route path={"/3"} element={<ReactQueryInfiniteQueriesExample/>}></Route>
                     <Route path={"/4"} element={<ReactQuerySuspenseExample/>}></Route>
+                    <Route path={"/5"} element={<ReactQueryErrorBoundaryExample/>}></Route>
                 </Routes>
             <ReactQueryDevtools initialIsOpen={false}/>
         </QueryClientProvider>
