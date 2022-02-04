@@ -26,3 +26,8 @@ export const lazyApi = async <T>(item?: T) : Promise<T | undefined> => {
     (await sleep(3000));
     return item ;
 }
+
+export const customLazyApi = async <T>(lazyTime: number, item?: T) : Promise<T | undefined> => {
+    (await sleep(lazyTime));
+    return item ;
+}
