@@ -42,7 +42,7 @@ export const ReactQueryErrorBoundaryExampleInner = (props: Props) => {
     }), [])
 
     // try 1
-    throw new Error("This is My Custom Error");
+    // throw new Error("This is My Custom Error");
 
     return (
         <div>
