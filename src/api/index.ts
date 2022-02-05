@@ -1,4 +1,4 @@
-import {Friend, User} from "./types"
+import {Friend, User, Users} from "./types"
 import axios from "axios";
 import {sleep} from "../util";
 
@@ -10,7 +10,7 @@ export const getUser = async (userId: number) : Promise<User> => {
     return (await apiInstance.get<User>(`users/${userId}`)).data;
 }
 
-export const getAllUser = async () : Promise<Array<User>> => {
+export const getAllUser = async () : Promise<Users> => {
     return (await apiInstance.get<Array<User>>(`users`)).data;
 }
 
