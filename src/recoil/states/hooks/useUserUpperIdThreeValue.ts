@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import {useRecoilValue} from "recoil";
-import {userUpperIdThree} from "../molecule/userUpperIdThree";
+import {userUpperIdThree} from "../selectors/userUpperIdThree";
 
 type Props = {
 
