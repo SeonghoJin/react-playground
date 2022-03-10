@@ -27,7 +27,7 @@ export const counterSlice = createSlice<CounterState, CounterAction>({
         incrementByAmount: (state: CounterState, action: PayloadAction<number>) => {
             state.value += action.payload;
         }
-    }
+    },
 })
 
 export const { increment, incrementByAmount, decrement } = counterSlice.actions;
